@@ -1,0 +1,38 @@
+.post{
+  display: flex;
+  justify-content: center;
+}
+.post > .card{
+  max-width: 800px;
+}
+
+.post-img{
+  position: relative;
+  width: 100%;
+  max-height: 175px;
+  /* max-width: 600px; */
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+.post-content{
+  padding: 1em;
+}
+.post-content>*{
+  color: initial; 
+  font-size: 10pt;
+  text-decoration: none; 
+}
+.post-title>h3{
+  margin-top: .125em;
+  margin-bottom: .125em;
+  font-size: 16pt;
+}
+.post-title,.post-title>*, .post-description{
+   font-family: "Inter", "Inter UI", -apple-system, sans-serif; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  color: #000;
+  text-decoration: none;
+}

@@ -1,0 +1,267 @@
+
+.hidden{
+  display: none;
+}
+
+.view-wrapper{
+  margin-top: calc(45px + 1em);
+}
+
+
+.block{
+  display: block;
+}
+
+.background-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -99;
+  opacity: .2;
+  transition: opacity 2s ease-in-out;
+}
+
+
+.brief{
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  font-weight: 200;
+  color: #000;
+}
+
+.name{
+  font-weight: 400;
+}
+.pipe{
+  margin-left: .125em;
+  font-weight: 100;
+  font-size: 18px;
+}
+.desc {
+  margin-left: .25em;
+  text-align: center;
+}
+
+
+.icon-link{
+  margin: .25em;
+  padding: .125em;
+  color: #000;
+  opacity: .8;
+  transition: opacity 100ms;
+  text-decoration: none;
+}
+.icon-link > svg{
+  opacity: .7;
+  transition: opacity 100ms;
+  text-decoration: none;
+}
+
+.icon-link:hover, .icon-link:visited{
+    opacity: 1;
+}
+
+.icon-link-text {
+  font-size: 12pt;
+  font-weight: 300;
+  color: #000;
+  margin-left: .325em;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.route-link-linebreak{
+  display: block;
+}
+.route-links {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100vw;
+  top: .25em;
+}
+.route-link{
+  display: flex;
+  align-items: center;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-top: .25em;
+  /* border-bottom-width: 2px; */
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: rgba(0,0,0,0); */
+  transition: box-shadow 150ms cubic-bezier(0.090, 0.415, 0.130, 0.935);
+  
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.04);
+ 
+}
+.route-link:hover{
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.route-link-active{
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.route-link > .icon-link {
+  display: flex;
+  align-items: center;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.connect{
+  width: 100vw;
+  text-align: center;
+  margin-top: .5em;
+  position: absolute;
+  bottom: 5px;
+}
+.connect > a {
+
+  margin: .25em;
+  padding: .125em;
+  color: #000;
+  opacity: .3;
+  transition: opacity 100ms cubic-bezier(0.090, 0.415, 0.130, 0.935);
+  
+}
+
+.connect > a:hover, a:visited {
+  opacity: .7;
+}
+
+
+
+@media (max-width: 500px) {
+  .view-wrapper{
+    margin-top: calc(45px + 1em);
+  }
+
+  .background-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -99;
+    opacity: .2;
+    transition: opacity 2s ease-in-out;
+  }
+
+
+  .brief{
+    display: block;
+    margin-top: 30vh;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    color: #000;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+  }
+  .pipe{
+    display: none;
+  }
+  .desc {
+    display: flex;
+    justify-content: center;
+    margin-left: .25em;
+    margin-top: .25em;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
+  .icon-link{
+    margin: .25em;
+    padding: .125em;
+    color: #000;
+    opacity: .6;
+    transition: opacity 100ms;
+    text-decoration: none;
+  }
+  .icon-link:hover, .icon-link:visited{
+      opacity: .8;
+  }
+
+  
+  .icon-link > svg{
+  opacity: .7;
+  transition: opacity 100ms;
+  text-decoration: none;
+}
+
+.icon-link:hover, .icon-link:visited{
+    opacity: 1;
+}
+  
+  .icon-link-text {
+    font-size: 16px;
+    font-weight: 200;
+    color: #000;
+    margin-left: .25em;
+    display: flex;
+    align-items: center;
+  }
+
+  .route-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .route-link{
+    display: flex;
+    align-items: center;
+  }
+  .route-link > .icon-link {
+    display: flex;
+    align-items: center;
+    	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  }
+
+  
+  
+  
+  .connect{
+    width: 100vw;
+    text-align: center;
+    margin-top: .5em;
+    position: absolute;
+    bottom: 5px;
+  }
+  .connect > a {
+
+    margin: .25em;
+    padding: .125em;
+    color: #000;
+    opacity: .3;
+    transition: opacity 100ms;
+    
+  }
+
+  .connect > a:hover, a:visited {
+    opacity: .7;
+  }
+
+
+}
+
