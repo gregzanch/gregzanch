@@ -1,0 +1,21 @@
+
+.connect{
+  width: 100vw;
+  text-align: center;
+  margin-top: .5em;
+  position: absolute;
+  bottom: 5px;
+}
+.connect > a {
+
+  margin: .25em;
+  padding: .125em;
+  color: #000;
+  opacity: .3;
+  transition: opacity 100ms cubic-bezier(0.090, 0.415, 0.130, 0.935);
+  
+}
+
+.connect > a:hover, a:visited {
+  opacity: .7;
+}

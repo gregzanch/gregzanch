@@ -5,62 +5,19 @@ import {
 	FontAwesomeIcon
 } from "@fortawesome/react-fontawesome";
 import {
-	faGithub,
-  faLinkedin,
-  faMediumM
-} from '@fortawesome/free-brands-svg-icons'
-import {
-	faEnvelope,
   faDraftingCompass,
   faAddressBook,
 	faHome,
 	faBookmark
-	// faFileAlt,
-	// faLayerGroup
 } from '@fortawesome/free-solid-svg-icons';
 import Home from "./components/views/home";
 import Contact from "./components/views/contact";
 import Projects from "./components/views/projects";
 import Posts from "./components/views/posts";
+import ConnectIcons from './components/connect-icons/connect-icons';
 
 import './App.css';
 
-
-function ConnectIcons() {
-  return (
-    <div
-      className="connect">
-      <a
-        href="mailto:zanchelli.greg@gmail.com"
-        className="icon-link"
-        target="_blank"
-        rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faEnvelope} size="1x" />
-      </a>
-      <a
-        href="https://github.com/gregzanch"
-        className="icon-link"
-        target="_blank"
-        rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faGithub} size="1x" />
-      </a>
-      <a
-        href="https://medium.com/@zanchelli.greg"
-        className="icon-link"
-        target="_blank"
-        rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faMediumM} size="1x" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/greg-zanchelli-40268a190/"
-        className="icon-link"
-        target="_blank"
-        rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faLinkedin} size="1x" />
-      </a>
-    </div>
-  );
-}
 
 export interface AppProps{ }
 export interface AppState{ }

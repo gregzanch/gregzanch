@@ -61,7 +61,7 @@ export default function Contact(props: ContactProps) {
         <div className="div4">
           <img
             src={ProfilePicture}
-            alt="profile-picture"
+            alt="profile"
             className="contact-profile-picture"
           />
         </div>
